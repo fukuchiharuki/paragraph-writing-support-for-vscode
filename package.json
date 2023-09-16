@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "paragraph-writing-support.helloWorld",
-        "title": "Hello World"
+        "command": "paragraph-writing-support.preview",
+        "title": "Paragraph Writing Support: preview"
       }
     ]
   },
