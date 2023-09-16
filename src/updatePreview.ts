@@ -1,12 +1,12 @@
 import * as vscode from 'vscode';
-import convertToHTML from './convertToHTML';
+import convertToHtml from './convertToHtml';
 
 let panel: vscode.WebviewPanel | null = null;
 
 export default function updatePreview(
 	document: vscode.TextDocument
 ) {
-	const htmlContent = convertToHTML(document.getText());
+	const htmlContent = convertToHtml(document.getText());
 
 	if (!panel) {
 		panel = vscode.window.createWebviewPanel(

@@ -1,4 +1,4 @@
-export default function convertToHTML(content: string) {
+export default function convertToHtml(content: string) {
 	const convertedHTML = `<html><body>${content}</body></html>`;
 	return convertedHTML;
 }
