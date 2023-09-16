@@ -1,11 +1,11 @@
 import * as vscode from 'vscode';
 import convertToHTML from './convertToHTML';
 
-let panel: vscode.WebviewPanel | undefined = undefined;
+let panel: vscode.WebviewPanel | null = null;
 
 export default function updatePreview(
 	document: vscode.TextDocument
-): vscode.WebviewPanel {
+) {
 	const htmlContent = convertToHTML(document.getText());
 
 	if (!panel) {
@@ -15,8 +15,11 @@ export default function updatePreview(
 			vscode.ViewColumn.Two,
 			{}
 		);
+
+    panel.onDidDispose(() => {
+      panel = null;
+    });
 	}
 
 	panel.webview.html = htmlContent;
-	return panel;
 }
