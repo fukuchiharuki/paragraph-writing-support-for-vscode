@@ -1,8 +1,9 @@
 import * as vscode from 'vscode';
 import convertToHTML from './convertToHTML';
 
+let panel: vscode.WebviewPanel | undefined = undefined;
+
 export default function updatePreview(
-	panel: vscode.WebviewPanel | undefined,
 	document: vscode.TextDocument
 ): vscode.WebviewPanel {
 	const htmlContent = convertToHTML(document.getText());
