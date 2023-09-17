@@ -9,6 +9,25 @@ This extension provides a preview with highlighted topic sentences.
 
 ![Preview](images/feature-preview.png)
 
+You can write one sentence per line.
+Consecutive lines are previewed as a single paragraph.
+Sentences can be swapped by replacing lines.
+
+To separate paragraphs, use a blank line.
+The first sentence of a paragraph becomes the topic sentence.
+To move a paragraph, move the entire block separated by blank lines.
+
+The topic sentence will be highlighted in the preview.
+Make sure that the topic sentence forms the basic structure of the entire text.
+
+## How to use
+
+1. Open VS Code command palette by selecting `Ctrl + Shift + P`.
+1. Type into the palette `paragraph writing` or `preview`.
+1. Preview pannel will open.
+
+![Command palette](images/howtouse-command-palette.png)
+
 <!--
 ## Requirements
 
