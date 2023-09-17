@@ -17,6 +17,10 @@
       {
         "command": "paragraph-writing-support.preview",
         "title": "Paragraph Writing Support: preview"
+      },
+      {
+        "command": "paragraph-writing-support.topic-sentences",
+        "title": "Paragraph Writing Support: topic sentences"
       }
     ]
   },

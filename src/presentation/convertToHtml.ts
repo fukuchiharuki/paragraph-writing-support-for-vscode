@@ -1,50 +1,25 @@
 import convertToTextStructureElements from "../model/convertToTextStructureElements";
-import { TextStructureElementType } from "../model/helper/TextStructureElement";
-import TextStructureElement from '../model/helper/TextStructureElement';
 import style from "../model/style.css";
+import convertToPreviewContent from "./convertToPreviewContent";
 
-export default function convertToHtml(text: string): string {
+export default function convertToHtml(
+  text: string,
+  previewStyle: PreviewStyle
+): string {
   const structure = convertToTextStructureElements(text);
-  const content = structure.map((element) => {
-    switch (element.type) {
-      case TextStructureElementType.P: return elementP(element);
-      case TextStructureElementType.H1: return elementH(element, 1);
-      case TextStructureElementType.H2: return elementH(element, 2);
-      case TextStructureElementType.H3: return elementH(element, 3);
-      case TextStructureElementType.H4: return elementH(element, 4);
-      case TextStructureElementType.H5: return elementH(element, 5);
-      case TextStructureElementType.H6: return elementH(element, 6);
-      case TextStructureElementType.HR: return elementHR();
-      default: return '';
-    }
-  }).join('');
+  const content = convertToPreviewContent(structure);
 	const convertedHTML = `
     <html>
       <head><style type="text/css">${style}</style></head>
-      <body>${content}</body>
+      <body class="${previewStyle}">${content}</body>
     </html>
   `;
 	return convertedHTML;
 }
 
-function elementP(element: TextStructureElement) {
-  const sentences = element.contents.map((sentence) =>
-    `<span class="${sentenceClasses(sentence).join(' ')}">${sentence}</span>`
-  ).join('');
-  return `<p>${sentences}</p>`;
-}
-
-function sentenceClasses(s: string) {
-  return [
-    'sentence',
-    s[s.length - 1].match(/[ -~]/) ? 'sentence--half-width' : 'sentence--full-width'
-  ];
-}
-
-function elementH(element: TextStructureElement, h: number) {
-  return `<h${h}>${element.contents[0]}</h${h}>`;
-}
-
-function elementHR() {
-  return '<hr />';
-}
+export enum PreviewStyle {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  TOPIC_SENTENCE_HIGHLIGHTS = 'topic-sentence-highlights',
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  BULLETED_TOPIC_SENTENCES = 'bulleted-topic-sentences',
+};

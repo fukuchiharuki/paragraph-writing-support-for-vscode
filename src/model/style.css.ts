@@ -3,16 +3,27 @@ body {
   font-size: large;
 }
 
-p {
+.topic-sentence-highlights p {
   text-indent: 1em;
 }
 
-.sentence:first-child {
+.topic-sentence-highlights .sentence:first-child {
   font-weight: bold;
 }
 
-.sentence--half-width+.sentence::before {
+.topic-sentence-highlights .sentence--half-width+.sentence::before {
   content: ' ';
+}
+
+.bulleted-topic-sentences p {
+  display: list-item;
+  list-style: inside;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.bulleted-topic-sentences .sentence:not(:first-child) {
+  display: none;
 }
 `;
 
