@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import updatePreview from './presentation/updatePreview';
 import debounce from './presentation/debounce';
-import convertToHtml from './model/convertToHtml';
 
 // This method is called when your extension is activated
 export function activate(context: vscode.ExtensionContext) {
@@ -10,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (editor) {
 			const document = editor.document;
-			updatePreview(document, convertToHtml);
+			updatePreview(document);
 		}
 	});
 
@@ -19,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const editor = vscode.window.activeTextEditor;
 		if (editor && event.document === editor.document) {
 			debounce(() => {
-				updatePreview(event.document, convertToHtml);
+				updatePreview(event.document);
 			});
 		}
 	});

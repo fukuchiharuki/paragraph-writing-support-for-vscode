@@ -1,7 +1,7 @@
-import convertToTextStructureElements from "./convertToTextStructureElements";
-import { TextStructureElementType } from "./helper/TextStructureElement";
-import TextStructureElement from './helper/TextStructureElement';
-import style from "./style.css";
+import convertToTextStructureElements from "../model/convertToTextStructureElements";
+import { TextStructureElementType } from "../model/helper/TextStructureElement";
+import TextStructureElement from '../model/helper/TextStructureElement';
+import style from "../model/style.css";
 
 export default function convertToHtml(text: string): string {
   const structure = convertToTextStructureElements(text);
