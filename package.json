@@ -19,6 +19,13 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fukuchiharuki/paragraph-writing-support-for-vscode.git"
+  },
+  "vsce": {
+    "baseImagesUrl": "https://github.com/fukuchiharuki/paragraph-writing-support-for-vscode/blob/main/"
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
