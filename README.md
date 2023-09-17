@@ -22,8 +22,11 @@ Make sure that the topic sentence forms the basic structure of the entire text.
 
 ## How to use
 
-1. Open VS Code command palette by selecting `Ctrl + Shift + P`.
-1. Type into the palette `paragraph writing` or `preview`.
+1. Focus text-editor pannel
+1. Select `Ctrl + Shift + P` to open VS-Code-command palette.
+1. Type into the palette `paragraph writing` and
+   - `preview` -> topic-sentence highlights
+   - `topic sentences` -> bulleted-topic sentences
 1. Preview pannel will open.
 
 ![Command palette](images/howtouse-command-palette.png)

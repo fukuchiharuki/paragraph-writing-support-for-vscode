@@ -6,6 +6,13 @@ All notable changes to the "Paragraph Writing Support" extension will be documen
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 -->
 
+## [0.2.0] - 2023-09-17
+
+### Added
+
+- New preview style: topic sentences
+- README section on how-to-use
+
 ## [0.1.1] - 2023-09-17
 
 ### Fixed
