@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
-import convertToHtml from './convertToHtml';
 
 let panel: vscode.WebviewPanel | null = null;
 
 export default function updatePreview(
-	document: vscode.TextDocument
+	document: vscode.TextDocument,
+  convertToHtml: (doc: string) => string
 ) {
 	const htmlContent = convertToHtml(document.getText());
 
