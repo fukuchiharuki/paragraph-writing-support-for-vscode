@@ -10,6 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
   const disposables = [
     // on command call (preview)
     vscode.commands.registerCommand('paragraph-writing-support.preview', () => {
+      note();
       const editor = vscode.window.activeTextEditor;
       if (editor) {
         const document = editor.document;
@@ -20,6 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     // on command call (topic sentences)
     vscode.commands.registerCommand('paragraph-writing-support.topic-sentences', () => {
+      note();
       const editor = vscode.window.activeTextEditor;
       if (editor) {
         const document = editor.document;
@@ -40,6 +42,23 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 
   disposables.forEach((disposable) => context.subscriptions.push(disposable));
+}
+
+function note() {
+  vscode.window
+    .showInformationMessage(
+      "This feature will be migrated to the new extension.",
+      "Install"
+    )
+    .then((selection) => {
+      if (selection === "Install") {
+        vscode.env.openExternal(
+          vscode.Uri.parse(
+            "https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing"
+          )
+        );
+      }
+    });
 }
 
 // This method is called when your extension is deactivated

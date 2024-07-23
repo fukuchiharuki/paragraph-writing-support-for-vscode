@@ -2,7 +2,7 @@
   "name": "paragraph-writing-support",
   "displayName": "Paragraph Writing Support",
   "description": "Paragraph writing support for VS Code.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "fukuchiharuki",
   "engines": {
     "vscode": "^1.82.0"
@@ -22,6 +22,9 @@
         "command": "paragraph-writing-support.topic-sentences",
         "title": "Paragraph Writing Support: topic sentences"
       }
+    ],
+    "extensionPack": [
+      "fukuchiharuki.visual-paragraph-writing"
     ]
   },
   "repository": {
