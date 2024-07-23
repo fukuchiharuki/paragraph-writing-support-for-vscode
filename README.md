@@ -2,6 +2,12 @@
 
 Paragraph wriging support for VS Code.
 
+## Note
+
+The GUI features of this extension will be migrated to the new extension:
+
+- [Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)
+
 ## Features
 
 You can write sentences while keeping track of topic sentences.

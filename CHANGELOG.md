@@ -6,6 +6,23 @@ All notable changes to the "Paragraph Writing Support" extension will be documen
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 -->
 
+## [Unreleased]
+
+### Added
+
+- A command to format a single sentence into a single line
+
+### Removed
+
+- All preview display features
+
+
+## [0.2.1] - 2024-07-23
+
+### Deprecated
+
+- All preview display features
+
 ## [0.2.0] - 2023-09-17
 
 ### Added
