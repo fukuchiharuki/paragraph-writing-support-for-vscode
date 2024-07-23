@@ -15,12 +15,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "paragraph-writing-support.preview",
-        "title": "Paragraph Writing Support: preview"
-      },
-      {
-        "command": "paragraph-writing-support.topic-sentences",
-        "title": "Paragraph Writing Support: topic sentences"
+        "command": "paragraph-writing-support.format-single-sentence-into-single-line",
+        "title": "Paragraph Writing Support: format single sentence into single line"
       }
     ],
     "extensionPack": [
