@@ -1,41 +1,40 @@
 # Paragraph Writing Support
 
-Paragraph wriging support for VS Code.
+This extension enhances the functionality of "[Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)" by providing a command to format text according to its specifications.
 
-## Note
+このエクステンションは「[Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)」の仕様に従ってテキストをフォーマットするコマンドを提供します。
 
-The GUI features of this extension will be migrated to the new extension:
-
-- [Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)
 
 ## Features
 
-You can write sentences while keeping track of topic sentences.
-This extension provides a preview with highlighted topic sentences.
+before:
+![Text before](images/features-text-before.png)
+after:
+![Text after](images/features-text-after.png)
 
-![Preview](images/feature-preview.png)
+<!-- en: -->
+1. formt single sentence into single line
 
-You can write one sentence per line.
-Consecutive lines are previewed as a single paragraph.
-Sentences can be swapped by replacing lines.
+<!-- ja: -->
+1. 一文を一行に整形します
 
-To separate paragraphs, use a blank line.
-The first sentence of a paragraph becomes the topic sentence.
-To move a paragraph, move the entire block separated by blank lines.
+## Usage
 
-The topic sentence will be highlighted in the preview.
-Make sure that the topic sentence forms the basic structure of the entire text.
+![Command palette](images/usage-command-palette.png)
 
-## How to use
+<!-- en: -->
+1. Open a text file in VS Code.
+1. Select the text you want to format.
+1. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
+1. Type and select `format single sentence into single line`.
+1. The selected text will be formatted according to the specifications of [Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing).
 
-1. Focus text-editor pannel
-1. Select `Ctrl + Shift + P` to open VS-Code-command palette.
-1. Type into the palette `paragraph writing` and
-   - `preview` -> topic-sentence highlights
-   - `topic sentences` -> bulleted-topic sentences
-1. Preview pannel will open.
-
-![Command palette](images/howtouse-command-palette.png)
+<!-- ja: -->
+1. VS Codeでテキストファイルを開きます。
+1. フォーマットしたいテキストを選択します。
+1. コマンドパレットを開きます（`Ctrl+Shift+P` または macOSでは `Cmd+Shift+P`）。
+1. `format single sentence into single line`と入力して選択します。
+1. 選択したテキストが[Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)の仕様に従ってフォーマットされます。
 
 <!--
 ## Requirements
