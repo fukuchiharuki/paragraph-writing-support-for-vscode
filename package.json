@@ -2,7 +2,7 @@
   "name": "paragraph-writing-support",
   "displayName": "Paragraph Writing Support",
   "description": "Paragraph writing support for VS Code.",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "publisher": "fukuchiharuki",
   "engines": {
     "vscode": "^1.82.0"
@@ -15,8 +15,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "paragraph-writing-support.format-single-sentence-into-single-line",
-        "title": "Paragraph Writing Support: format single sentence into single line"
+        "command": "paragraph-writing-support.format-one-sentence-per-line",
+        "title": "Paragraph Writing Support: format one sentence per line"
       }
     ],
     "extensionPack": [

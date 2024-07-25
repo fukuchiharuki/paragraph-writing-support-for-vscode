@@ -4,7 +4,6 @@ This extension enhances the functionality of "[Visual Paragraph Writing](https:/
 
 このエクステンションは「[Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)」の仕様に従ってテキストをフォーマットするコマンドを提供します。
 
-
 ## Features
 
 before:
@@ -13,10 +12,10 @@ after:
 ![Text after](images/features-text-after.png)
 
 <!-- en: -->
-1. formt single sentence into single line
+1. formt one sentence per line
 
 <!-- ja: -->
-1. 一文を一行に整形します
+1. 一行につき一文に整形します
 
 ## Usage
 
@@ -26,14 +25,14 @@ after:
 1. Open a text file in VS Code.
 1. Select the text you want to format.
 1. Open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS).
-1. Type and select `format single sentence into single line`.
+1. Type and select `format one sentence per line`.
 1. The selected text will be formatted according to the specifications of [Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing).
 
 <!-- ja: -->
 1. VS Codeでテキストファイルを開きます。
 1. フォーマットしたいテキストを選択します。
 1. コマンドパレットを開きます（`Ctrl+Shift+P` または macOSでは `Cmd+Shift+P`）。
-1. `format single sentence into single line`と入力して選択します。
+1. `format one sentence per line`と入力して選択します。
 1. 選択したテキストが[Visual Paragraph Writing](https://marketplace.visualstudio.com/items?itemName=fukuchiharuki.visual-paragraph-writing)の仕様に従ってフォーマットされます。
 
 <!--

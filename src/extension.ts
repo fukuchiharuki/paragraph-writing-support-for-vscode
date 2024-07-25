@@ -5,7 +5,7 @@ import formatSingleSentenceIntoSingleLine from './command/formatSingleSentenceIn
 export function activate(context: vscode.ExtensionContext) {
   const disposables = [
     vscode.commands.registerCommand(
-      "paragraph-writing-support.format-single-sentence-into-single-line",
+      "paragraph-writing-support.format-one-sentence-per-line",
       formatSingleSentenceIntoSingleLine
     ),
   ];
